@@ -13,7 +13,7 @@ const NewTicket = () => {
       title,
       price,
     },
-    onSuccess: () => (window.location = "https://ticketingg.com/"),
+    onSuccess: () => (window.location = "www.tickets-app-prod.store/"),
   });
 
   const onSubmit = (event) => {
