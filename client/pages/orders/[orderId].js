@@ -12,7 +12,8 @@ const OrderShow = ({ order, currentUser }) => {
     body: {
       orderId: order.id,
     },
-    onSuccess: (payment) => (window.location = "https://ticketingg.com/orders"),
+    onSuccess: (payment) =>
+      (window.location = "www.tickets-app-prod.store/orders"),
   });
 
   useEffect(() => {
