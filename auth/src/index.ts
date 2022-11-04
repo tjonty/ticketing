@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 import { app } from "./app";
 
 const start = async () => {
-  console.log("starting up.!!");
+  console.log("Auth Service starting UP!!!!");
 
   if (!process.env.JWT_KEY) {
     throw new Error("JET_KEY must be defined.");
