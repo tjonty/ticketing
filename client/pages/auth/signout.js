@@ -6,7 +6,7 @@ const signout = () => {
     url: "/api/users/signout",
     method: "post",
     body: {},
-    onSuccess: () => (window.location = "www.tickets-app-prod.store/"),
+    onSuccess: () => (window.location = "www.tickets-app-prod.online/"),
   });
 
   useEffect(() => {

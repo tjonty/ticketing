@@ -13,7 +13,7 @@ const OrderShow = ({ order, currentUser }) => {
       orderId: order.id,
     },
     onSuccess: (payment) =>
-      (window.location = "www.tickets-app-prod.store/orders"),
+      (window.location = "www.tickets-app-prod.online/orders"),
   });
 
   useEffect(() => {
