@@ -12,7 +12,7 @@ const signin = () => {
       email,
       password,
     },
-    onSucess: () => (window.location = "www.tickets-app-prod.store/"),
+    onSucess: () => (window.location = "www.tickets-app-prod.online/"),
   });
 
   const onSubmit = async (event) => {
