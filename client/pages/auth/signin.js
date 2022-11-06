@@ -12,9 +12,9 @@ const signin = () => {
       email,
       password,
     },
-    onSucess: () => (window.location = "www.tickets-app-prod.online/"),
+    onSucess: () => Router.push("/"),
   });
-
+  // onSucess: () => (window.location = "www.tickets-app-prod.online/"),÷
   const onSubmit = async (event) => {
     event.preventDefault();
     await doRequest();

@@ -12,9 +12,9 @@ const OrderShow = ({ order, currentUser }) => {
     body: {
       orderId: order.id,
     },
-    onSuccess: (payment) =>
-      (window.location = "www.tickets-app-prod.online/orders"),
+    onSuccess: (payment) => Router.push("/orders"),
   });
+  // (window.location = "www.tickets-app-prod.online/orders"),
 
   useEffect(() => {
     const findTimeLeft = () => {
