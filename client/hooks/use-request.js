@@ -18,7 +18,7 @@ const useRequest = ({ url, method, body, onSuccess }) => {
       console.log(err);
       setErrors(
         <div className="alert alert-danger">
-          <h4> OPPs.. </h4>
+          <h4> Opps.. </h4>
           <ul className="my-0">
             {err.response.data.errors.map((err) => (
               <li key={err.message}>{err.message}</li>
