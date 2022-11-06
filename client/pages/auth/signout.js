@@ -1,3 +1,4 @@
+import Router from "next/router";
 import { useEffect } from "react";
 import useRequest from "../../hooks/use-request";
 
@@ -6,8 +7,9 @@ const signout = () => {
     url: "/api/users/signout",
     method: "post",
     body: {},
-    onSuccess: () => (window.location = "www.tickets-app-prod.online/"),
+    onSuccess: () => Router.push("/"),
   });
+  // onSuccess: () => (window.location = "www.tickets-app-prod.online/"),
 
   useEffect(() => {
     doRequest();

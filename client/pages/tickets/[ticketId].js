@@ -8,9 +8,9 @@ const TicketShow = ({ ticket }) => {
     body: {
       ticketId: ticket.id,
     },
-    onSuccess: (order) =>
-      (window.location = `www.tickets-app-prod.online/orders/${order.id}`),
+    onSuccess: Router.push("/orders/[orderId]", `/orders/${order.id}`),
   });
+  // (window.location = `www.tickets-app-prod.online/orders/${order.id}`),
 
   // Router.push("/orders/[orderId]", `/orders/${order.id}`)
   return (
