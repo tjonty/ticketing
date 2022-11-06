@@ -12,9 +12,8 @@ const signin = () => {
       email,
       password,
     },
-    onSucess: () => Router.push("/"),
+    onSuccess: () => Router.push("/"),
   });
-  // onSucess: () => (window.location = "www.tickets-app-prod.online/"),÷
   const onSubmit = async (event) => {
     event.preventDefault();
     await doRequest();
@@ -41,7 +40,7 @@ const signin = () => {
         />
       </div>
       {errors}
-      <button className="btn btn-primary">Sign In</button>
+      <button className="btn btn-primary mr-1">Sign In</button>
     </form>
   );
 };

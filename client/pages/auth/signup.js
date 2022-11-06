@@ -14,7 +14,6 @@ const signup = () => {
     },
     onSuccess: () => Router.push("/"),
   });
-  // onSuccess: () => (window.location = "www.tickets-app-prod.online/"),
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -42,7 +41,7 @@ const signup = () => {
         />
       </div>
       {errors}
-      <button className="btn btn-primary">Sign Up</button>
+      <button className="btn btn-primary mr-1">Sign Up</button>
     </form>
   );
 };

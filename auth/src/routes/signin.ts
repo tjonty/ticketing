@@ -18,7 +18,6 @@ router.post(
   ],
   validationRequest,
   async (req: Request, res: Response) => {
-    console.log("in signin");
     const { email, password } = req.body;
 
     const existingUser = await User.findOne({ email });
@@ -51,7 +50,6 @@ router.post(
       jwt: userJwt,
     };
 
-    console.log("ssending sigin in");
     res.status(200).send(existingUser);
   }
 );

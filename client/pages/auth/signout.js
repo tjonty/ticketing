@@ -9,7 +9,6 @@ const signout = () => {
     body: {},
     onSuccess: () => Router.push("/"),
   });
-  // onSuccess: () => (window.location = "www.tickets-app-prod.online/"),
 
   useEffect(() => {
     doRequest();
